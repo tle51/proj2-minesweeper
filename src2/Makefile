@@ -1,16 +1,21 @@
-#Makefile for Homework #2
+#Minesweeper
 
 #Compiler and compiler flag -Xlint
 JFLAGS = -g
 JCC = javac
 
-default: Square.class Test.class
+default: Frame.class Button.class Panel.class
 
-Square.class:
-	$(JCC) $(JFLAGS) Square.java
+Button.class:
+	$(JCC) $(JFLAGS) Button.java
 	
-Square.class:
-	$(JCC) $(JFLAGS) Test.java
+Panel.class:
+	$(JCC) $(JFLAGS) Panel.java	
+	
+Frame.class:
+	$(JCC) $(JFLAGS) Frame.java
+	
+
 
 	
 clean:
